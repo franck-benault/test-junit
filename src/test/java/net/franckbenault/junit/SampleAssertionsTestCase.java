@@ -13,6 +13,7 @@ public class SampleAssertionsTestCase {
 	private int[] ints1 = {1,3};
 	private int[] ints2 = {1,3};
 	
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -30,8 +31,17 @@ public class SampleAssertionsTestCase {
 	}
 
 	@Test
-	public void assertArrayEqualsTest() {
+	public void t01AssertArrayEqualsTest() {
 		assertArrayEquals(ints1, ints2);
 	}
 
+	@Test
+	public void t02aAssertEquals() {
+		assertEquals("String", "String");
+	}
+	
+	@Test
+	public void t02aAssertNotEquals() {
+		assertNotEquals("String1", "String2");
+	}
 }
