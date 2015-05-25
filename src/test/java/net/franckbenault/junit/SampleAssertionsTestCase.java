@@ -59,4 +59,16 @@ public class SampleAssertionsTestCase {
 		assertFalse(false);
 		assertFalse("explanation", false);
 	}
+	
+	@Test
+	public void t04aAssertNull() {
+		assertNull(null);
+		assertNull("explanation",null);
+	}
+	
+	@Test
+	public void t04bAssertNotNull() {
+		assertNotNull(new Object());
+		assertNotNull("explanation",new Object());
+	}
 }
