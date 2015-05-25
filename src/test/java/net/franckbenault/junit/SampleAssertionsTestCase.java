@@ -33,16 +33,19 @@ public class SampleAssertionsTestCase {
 	@Test
 	public void t01AssertArrayEqualsTest() {
 		assertArrayEquals(ints1, ints2);
+		assertArrayEquals("explanation",ints1, ints2);
 	}
 
 	@Test
 	public void t02aAssertEquals() {
 		assertEquals("String", "String");
+		assertEquals("explanation","String", "String");
 	}
 	
 	@Test
 	public void t02bAssertNotEquals() {
 		assertNotEquals("String1", "String2");
+		assertNotEquals("explanation","String1", "String2");
 	}
 	
 	@Test
