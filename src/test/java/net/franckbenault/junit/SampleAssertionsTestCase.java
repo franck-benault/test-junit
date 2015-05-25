@@ -41,7 +41,19 @@ public class SampleAssertionsTestCase {
 	}
 	
 	@Test
-	public void t02aAssertNotEquals() {
+	public void t02bAssertNotEquals() {
 		assertNotEquals("String1", "String2");
+	}
+	
+	@Test
+	public void t03aAssertTrue() {
+		assertTrue(true);
+		assertTrue("explanation", true);
+	}
+	
+	@Test
+	public void t03bAssertFalse() {
+		assertFalse(false);
+		assertFalse("explanation", false);
 	}
 }
