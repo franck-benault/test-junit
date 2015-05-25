@@ -71,4 +71,19 @@ public class SampleAssertionsTestCase {
 		assertNotNull(new Object());
 		assertNotNull("explanation",new Object());
 	}
+	
+	@Test
+	public void t05aAssertSame() {
+		Object o = new Object();
+		assertSame(o,o);
+		assertSame("explanation",o,o);
+	}
+	
+	@Test
+	public void t05bAssertNotSame() {
+		Object o1 = new Object();
+		Object o2 = new Object();
+		assertNotSame(o1, o2);
+		assertNotSame("explanation",o1, o2);
+	}
 }
