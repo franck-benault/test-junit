@@ -1,6 +1,8 @@
-package net.franckbenault.junit;
+package net.franckbenault.junit.assertions;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -85,5 +87,7 @@ public class SampleAssertionsTestCase {
 		Object o2 = new Object();
 		assertNotSame(o1, o2);
 		assertNotSame("explanation",o1, o2);
+		
+		assertThat(o1,equalTo(o1));
 	}
 }
