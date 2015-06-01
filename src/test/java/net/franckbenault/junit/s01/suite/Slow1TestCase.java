@@ -1,4 +1,4 @@
-package net.franckbenault.junit.suite;
+package net.franckbenault.junit.s01.suite;
 
 import static org.junit.Assert.assertTrue;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class Fast2TestCase {
+public class Slow1TestCase {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,7 +27,8 @@ public class Fast2TestCase {
 	}
 
 	@Test
-	public void test() {
+	public void test() throws InterruptedException {
+		Thread.sleep(10000);
 		assertTrue("Dummy", true);
 	}
 

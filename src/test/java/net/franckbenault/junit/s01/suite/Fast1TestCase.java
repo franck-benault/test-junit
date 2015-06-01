@@ -1,4 +1,4 @@
-package net.franckbenault.junit.suite;
+package net.franckbenault.junit.s01.suite;
 
 import static org.junit.Assert.assertTrue;
 

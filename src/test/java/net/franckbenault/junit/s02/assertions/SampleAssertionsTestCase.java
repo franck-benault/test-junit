@@ -1,4 +1,4 @@
-package net.franckbenault.junit.assertions;
+package net.franckbenault.junit.s02.assertions;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.MatcherAssert.assertThat;

@@ -1,6 +1,6 @@
-package net.franckbenault.junit.suite;
+package net.franckbenault.junit.s03.junitrules;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class Slow1TestCase {
+public class SampleJunitRulesTestCase {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,9 +27,8 @@ public class Slow1TestCase {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
-		Thread.sleep(10000);
-		assertTrue("Dummy", true);
+	public void test() {
+		//fail("Not yet implemented");
 	}
 
 }
