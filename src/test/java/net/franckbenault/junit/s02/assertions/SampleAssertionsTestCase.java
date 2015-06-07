@@ -21,14 +21,22 @@ public class SampleAssertionsTestCase {
 
 	@Test
 	public void t02aAssertEquals() {
-		assertEquals("String", "String");
-		assertEquals("explanation","String", "String");
+		
+		String s1 = "a string";
+		String s2 = "a string";
+		
+		assertEquals(s1, s2);
+		assertEquals("explanation",s1, s2);
 	}
 	
 	@Test
 	public void t02bAssertNotEquals() {
-		assertNotEquals("String1", "String2");
-		assertNotEquals("explanation","String1", "String2");
+		
+		String s1 = "String1";
+		String s2 = "String2";
+		
+		assertNotEquals(s1, s2);
+		assertNotEquals("explanation",s1, s2);
 	}
 	
 	@Test
