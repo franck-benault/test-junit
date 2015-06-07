@@ -41,26 +41,38 @@ public class SampleAssertionsTestCase {
 	
 	@Test
 	public void t03aAssertTrue() {
-		assertTrue(true);
-		assertTrue("explanation", true);
+		
+		boolean condition = true;
+		
+		assertTrue(condition);
+		assertTrue("explanation", condition);
 	}
 	
 	@Test
 	public void t03bAssertFalse() {
-		assertFalse(false);
-		assertFalse("explanation", false);
+		
+		boolean condition = false;
+		
+		assertFalse(condition);
+		assertFalse("explanation", condition);
 	}
 	
 	@Test
 	public void t04aAssertNull() {
-		assertNull(null);
-		assertNull("explanation",null);
+		
+		Object myObject = null;
+		
+		assertNull(myObject);
+		assertNull("explanation",myObject);
 	}
 	
 	@Test
 	public void t04bAssertNotNull() {
-		assertNotNull(new Object());
-		assertNotNull("explanation",new Object());
+		
+		Object myObject = new Object();
+		
+		assertNotNull(myObject);
+		assertNotNull("explanation",myObject);
 	}
 	
 	@Test
