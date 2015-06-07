@@ -77,9 +77,10 @@ public class SampleAssertionsTestCase {
 	
 	@Test
 	public void t05aAssertSame() {
-		Object o = new Object();
-		assertSame(o,o);
-		assertSame("explanation",o,o);
+		Object o1 = new Object();
+		Object o2 = o1;
+		assertSame(o1,o2);
+		assertSame("explanation",o1,o1);
 	}
 	
 	@Test
@@ -89,6 +90,6 @@ public class SampleAssertionsTestCase {
 		assertNotSame(o1, o2);
 		assertNotSame("explanation",o1, o2);
 		
-		assertThat(o1,equalTo(o1));
+	
 	}
 }
