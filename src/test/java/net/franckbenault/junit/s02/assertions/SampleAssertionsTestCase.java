@@ -1,12 +1,20 @@
 package net.franckbenault.junit.s02.assertions;
 
 import static org.junit.Assert.*;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.IsEqual.equalTo;
 
 import org.junit.Test;
 
 public class SampleAssertionsTestCase {
+	
+	@Test(expected=ArithmeticException.class)
+	public void t00fail() {
+		int i1= 0;
+		int i2= 0;
+		
+		int res = i1/i2;
+		
+		fail("exception expected");
+	}
 
 	@Test
 	public void t01AssertArrayEqualsTest() {
