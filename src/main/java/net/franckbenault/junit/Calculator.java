@@ -2,7 +2,7 @@ package net.franckbenault.junit;
 
 public class Calculator {
 
-	public double squareRoot(int x) throws IllegalArgumentException {
+	public static double squareRoot(int x) throws IllegalArgumentException {
 		
 		if(x<0) {
 			throw new IllegalArgumentException("Could not calculate the squareRoot of a negative number");
@@ -12,7 +12,7 @@ public class Calculator {
 		}
 	}
 	
-	public double divide(int x, int y) throws IllegalArgumentException {
+	public static double divide(int x, int y) throws IllegalArgumentException {
 		
 		if(y==0) {
 			throw new IllegalArgumentException("Could not divide by 0");
