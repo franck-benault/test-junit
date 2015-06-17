@@ -12,7 +12,7 @@ public class CalculatorExceptionTestCase {
 
 
 	@Test
-	public void testDivide() {
+	public void testDivide01TryCatch() {
 		try {
 			Calculator.divide(1, 0);
 			fail("Exception expected");
@@ -20,8 +20,13 @@ public class CalculatorExceptionTestCase {
 			assertTrue(e instanceof IllegalArgumentException);
 			assertEquals(e.getMessage(), "Could not divide by 0");
 		
-		}
-		
+		}	
 	}
 
+	@Test(expected=IllegalArgumentException.class)
+	public void testDivide02Exception() {
+		
+		Calculator.divide(1, 0);
+	
+	}
 }
