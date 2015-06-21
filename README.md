@@ -34,5 +34,5 @@ assertThat (see hamcrest library)
 ## 03 Junit rules
 TemporaryFolder rule
 ## 04 Handling exception
-Fail with try catch bloc
-@Test annotation with expected
+* Fail with try catch bloc
+* @Test annotation with expected
