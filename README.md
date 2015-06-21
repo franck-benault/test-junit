@@ -15,19 +15,19 @@ one dependency : hamcrest-core (Matcher library)
 
 # Goal of Junit
 * Test Framework
-** organize the tests (before, after methods, test suites)
-** provide assertions
+ * organize the tests (before, after methods, test suites)
+ * provide assertions
 # Examples
 ## 01 tests regroupment
 * Regroupment per class : @Suite
 * Regroupment per test : @Category
 ## 02 assertions in Junit
-6 groups of assertion
-assertArrayEquals
-assertEquals / assertNotEquals
-assertTrue / assertFalse
-assertNull / assertNotNull
-assertSame /assertNotSame
+* 6 groups of assertion
+ * assertArrayEquals
+ * assertEquals / assertNotEquals
+ * assertTrue / assertFalse
+ * assertNull / assertNotNull
+ * assertSame /assertNotSame
 
 assertThat (see hamcrest library)
 ## 03 Junit rules
