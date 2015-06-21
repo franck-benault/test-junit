@@ -21,6 +21,7 @@ one dependency : hamcrest-core (Matcher library)
 ## 01 tests regroupment
 * Regroupment per class : @Suite
 * Regroupment per test : @Category
+ 
 ## 02 assertions in Junit
 * 6 groups of assertion
  * assertArrayEquals
